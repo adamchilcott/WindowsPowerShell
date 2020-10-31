@@ -7,6 +7,7 @@ Function desktop {& explorer.exe Desktop}
 
 ## Profile
 Function reload {& $Profile}
+Function listpath {$Env:Path}
 Function kapow {Get-ExecutionPolicy -List;Set-ExecutionPolicy RemoteSigned -Scope CurrentUser;Get-ExecutionPolicy -List}
 
 ## BusyBox
