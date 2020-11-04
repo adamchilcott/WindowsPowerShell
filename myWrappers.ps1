@@ -11,7 +11,7 @@ Function listpath {$Env:Path}
 Function kapow {Get-ExecutionPolicy -List;Set-ExecutionPolicy RemoteSigned -Scope CurrentUser;Get-ExecutionPolicy -List}
 
 ## BusyBox
-Function ash {& $env:SYSTEMDRIVE\DH77EB\Binaries\busybox.exe ash}
+Function ash {& $env:SYSTEMDRIVE\DH77EB\Binaries\busybox.exe ash -l}
 Function bash {& $env:SYSTEMDRIVE\DH77EB\Binaries\busybox.exe bash}
 
 ## Application
